@@ -1,6 +1,6 @@
-# 🎬 Movie Recommendation System
+# 🎬 Movie Recommendation Website
 
-This is a web-based movie recommendation system built using Python, Streamlit, and the K-Nearest Neighbors (KNN) algorithm. It recommends movies similar to a selected title based on collaborative filtering using the MovieLens dataset.
+This is a web-based movie recommendation system built using Python, Streamlit, and the K-Nearest Neighbors (KNN) algorithm. It recommends movies similar to a selected title based on collaborative filtering using the MovieLens dataset, with posters fetched from the TMDb API.
 
 ## 🚀 Features
 
@@ -22,20 +22,30 @@ The recommendation engine uses KNN to find movies similar to the one selected by
 - Streamlit
 - TMDb API
 
+## 📁 Repository Structure
+
+```
+Movie-Recommendation-Website/
+├── app.py                                          # Streamlit app (UI + TMDb posters)
+├── movielens_movie_recommendation_system.py        # Recommender class + preprocessing
+├── movies.csv / ratings.csv / users.csv            # MovieLens dataset
+└── MIT License                                     # license file
+```
+
 ## 📦 Installation
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/your-username/movie-recommender.git
-    cd movie-recommender
+    git clone https://github.com/ZeroDayDoom/Movie-Recommendation-Website.git
+    cd Movie-Recommendation-Website
     ```
 
 2. Install dependencies:
     ```bash
-    pip install -r requirements.txt
+    pip install streamlit requests pandas scikit-learn
     ```
 
-3. Add your TMDb API key in `app.py`:
+3. Add your own TMDb API key in `app.py`:
     ```python
     TMDB_API_KEY = "your_actual_key"
     ```
@@ -47,7 +57,7 @@ The recommendation engine uses KNN to find movies similar to the one selected by
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [`MIT License`](./MIT%20License) file for details.
 
 ## 🙌 Acknowledgements
 
